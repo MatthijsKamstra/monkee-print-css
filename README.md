@@ -2,6 +2,12 @@
 
 Print web pages with style
 
+<div style="text-align: center;">
+
+![](icon.png)
+
+</div>
+
 Not something we do often: print a webpase. I was curious what it would take to have a nicely printed page. Mostly will serve my own needs at this moment, but to make it more usefull for others I have added the resources I used.
 
 ## Resources
