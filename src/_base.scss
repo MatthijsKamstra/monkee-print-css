@@ -55,6 +55,24 @@ body {
     margin-left: auto;
 }
 
+.rowz {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col* {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 /*
 I copied this from Bootstrap, but stripped it down to the absolute minimal
 This is not a complete grid.css with all bells and wissles, use Bootstrap if you need that
