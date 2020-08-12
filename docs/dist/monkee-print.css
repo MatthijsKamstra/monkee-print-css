@@ -6,39 +6,68 @@
  * By Matthijs Kamstra
  * https://github.com/MatthijsKamstra/monkee-print-css
  */
-@page {
-  margin: 0.5cm; }
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent; }
 
 body {
-  font: 12pt Georgia, "Times New Roman", Times, serif;
-  line-height: 1.3;
   background: #fff !important;
-  color: #000; }
+  color: #000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility; }
 
-h1 {
-  font-size: 24pt; }
-
+h1,
 h2,
 h3,
-h4 {
-  font-size: 14pt;
-  margin-top: 25px; }
+h4,
+h5,
+h6 {
+  color: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  margin-top: 0; }
 
-.bg-lime {
-  background-color: lime; }
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 500; }
 
-.bg-green {
-  background-color: green; }
+h1,
+.h1 {
+  font-size: 2rem; }
 
-body {
-  background: #cccccc; }
+h2,
+.h2 {
+  font-size: 1.6rem; }
 
-.page {
-  background: yellow;
-  width: 210mm;
-  height: 297mm;
-  margin-right: auto;
-  margin-left: auto; }
+h3,
+.h3 {
+  font-size: 1.4rem; }
+
+h4,
+.h4 {
+  font-size: 1.2rem; }
+
+h5,
+.h5 {
+  font-size: 1rem; }
+
+h6,
+.h6 {
+  font-size: 0.8rem; }
 
 .container {
   width: 100%;
@@ -50,29 +79,15 @@ body {
   margin-right: auto;
   margin-left: auto; }
 
-.rowz {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
-
-.col* {
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px; }
-
 /*
 I copied this from Bootstrap, but stripped it down to the absolute minimal
 This is not a complete grid.css with all bells and wissles, use Bootstrap if you need that
 */
 .row {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-right: -1rem;
+  margin-left: -1rem; }
 
 .col,
 .col-1,
@@ -87,7 +102,9 @@ This is not a complete grid.css with all bells and wissles, use Bootstrap if you
 .col-10,
 .col-11,
 .col-12 {
-  min-height: 1px; }
+  min-height: 1px;
+  padding-right: 1rem;
+  padding-left: 1rem; }
 
 .col {
   flex: 1 0 0; }
@@ -127,5 +144,49 @@ This is not a complete grid.css with all bells and wissles, use Bootstrap if you
 
 .col-12 {
   flex: 0 0 100%; }
+
+@page {
+  margin: 0.5cm; }
+
+.page {
+  background: yellow;
+  width: 210mm;
+  height: 297mm;
+  margin-right: auto;
+  margin-left: auto; }
+
+.bg-lime {
+  background-color: lime; }
+
+.bg-green {
+  background-color: green; }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
+
+.rounded-circle {
+  border-radius: 50% !important; }
+
+.rounded {
+  border-radius: 0.25rem !important; }
+
+@media print {
+  body,
+  .page,
+  .col,
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    background-color: #fff; } }
 
 /*# sourceMappingURL=monkee-print.css.map */

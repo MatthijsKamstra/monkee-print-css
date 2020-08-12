@@ -1,0 +1,51 @@
+@page {
+    margin: 0.5cm;
+}
+
+.page {
+    background: yellow;
+    width: 210mm;
+    height: 297mm;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bg-lime {
+    background-color: lime;
+}
+.bg-green {
+    background-color: green;
+}
+// Images
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.rounded {
+    border-radius: 0.25rem !important;
+}
+
+// print background colors
+@media print {
+    body,
+    .page,
+    .col,
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12 {
+        background-color: $background-color;
+    }
+}

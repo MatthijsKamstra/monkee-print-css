@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "monkee-print-custom.css",
+	"sources": [
+		"../../src/monkee-print-custom.scss"
+	],
+	"names": [],
+	"mappings": ""
+}
