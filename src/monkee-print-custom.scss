@@ -1,0 +1,47 @@
+// Variables
+@import "variables";
+@import "mixins";
+
+/*!
+ * Monkee style custom print sheet | version #{$version}
+ *
+ * MIT License
+ *
+ * By Matthijs Kamstra
+ * https://github.com/MatthijsKamstra/monkee-print-css
+ */
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Zilla+Slab:wght@400;700&display=swap");
+
+html {
+    font-size: 13px;
+}
+body {
+    font-family: Lato, sans-serif;
+}
+
+// Typography
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    color: $white;
+    background-color: $black;
+    line-height: 1.3;
+    padding: 0 5px;
+    display: table;
+    font-family: "Zilla Slab", serif;
+}
