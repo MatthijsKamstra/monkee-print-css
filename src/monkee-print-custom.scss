@@ -45,3 +45,38 @@ h6,
     display: table;
     font-family: "Zilla Slab", serif;
 }
+.img-profile {
+    border: 7px solid white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.align-self-center {
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+    h1,
+    h2 {
+        margin-bottom: 0.1em;
+    }
+}
+
+dl,
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+li {
+    line-height: 1.8rem;
+    margin-left: -1rem;
+}
+
+ul {
+    li {
+        list-style: circle;
+    }
+}
+
+.bg-gray {
+    background-color: $color-gray-light;
+}
