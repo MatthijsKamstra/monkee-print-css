@@ -155,10 +155,10 @@ This is not a complete grid.css with all bells and wissles, use Bootstrap if you
   margin-right: auto;
   margin-left: auto; }
 
-.bg-lime {
+.bg-left {
   background-color: rgba(0, 255, 0, 0.5); }
 
-.bg-green {
+.bg-right {
   background-color: rgba(0, 200, 0, 0.5); }
 
 .img-fluid {
